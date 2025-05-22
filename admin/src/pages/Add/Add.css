@@ -1,0 +1,102 @@
+
+
+.add {
+  background: linear-gradient(to right, #e4e1e7, #dce0e8); /* किंवा हवा असल्यास दुसरा gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+  
+  form {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1;
+  }
+  
+  .add-img-upload img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px dashed #999;
+    transition: 0.3s ease;
+    
+  }
+  
+  .add-img-upload img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    border-color: #6c63ff;
+   
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    background-color: #fff;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 0 px rgba(108, 99, 255, 0.2);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .add-btn {
+    background: #39398a;
+    color: #fffbfb;
+    padding: 0.75rem 1rem;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background: #1a0be4;
+  }
+  
+  .add-category-price {
+    display: flex;
+    gap: 1rem;
+  
+  
+  }
+  
+  .add-category,
+  .add-price {
+    flex: 1;
+  }
+  
